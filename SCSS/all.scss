@@ -1,0 +1,44 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+.box {
+    border: 1px solid {
+      radius: 10%;
+      color: blue;
+      background-color: $blue-100;;
+    }
+  }
+
+  $colors: (
+      "primary": #333,
+      "secondary":red
+  );
+
+  @each $name,$color in $colors{
+      .btn-#{$name}{
+          background:$color;
+          color:#fff;
+          border: 1px solid darkeb($color,5%);
+      }
+  }
+
+  .banner {
+    &-title {
+      font-size: 3rem;
+    }
+    &-color {
+      color: red;
+    }
+  }
+
+  .banner2 {
+    .title {
+      font-size: 3rem;
+    }
+    .color {
+      color: red;
+    }
+  }
+
+
+  
